@@ -9,7 +9,7 @@ fn main(){
     file.read_to_string(&mut contents).expect("Unable to read the file");
 
     let result = Model::parse(&contents);
-    println!("{:?}", result.unwrap().get_list_of_species());
+    println!("{:#?}", result.unwrap().get_list_of_species());
 
    
 }
